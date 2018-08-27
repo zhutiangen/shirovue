@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.login.mapper.LogMapper" >
+  <resultMap id="BaseResultMap" type="com.example.login.pojo.Log" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="LOG_ID" property="logId" jdbcType="VARCHAR" />
+    <result column="LOG_USER" property="logUser" jdbcType="OTHER" />
+    <result column="LOG_TIME" property="logTime" jdbcType="TIMESTAMP" />
+    <result column="LOG_IP" property="logIp" jdbcType="VARCHAR" />
+    <result column="LOG_ACTION" property="logAction" jdbcType="OTHER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    LOG_ID, LOG_USER, LOG_TIME, LOG_IP, LOG_ACTION
+  </sql>
+</mapper>

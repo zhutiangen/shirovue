@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.login.mapper.RoleMapper">
+  <resultMap id="BaseResultMap" type="com.example.login.pojo.Role">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ROLE_ID" jdbcType="VARCHAR" property="roleId" />
+    <result column="ROLE_NAME" jdbcType="OTHER" property="roleName" />
+    <result column="ROLE_DESC" jdbcType="VARCHAR" property="roleDesc" />
+    <result column="ENABLE" jdbcType="DECIMAL" property="enable" />
+    <result column="CRTD_DATE" jdbcType="TIMESTAMP" property="crtdDate" />
+    <result column="UPDTD_DATE" jdbcType="TIMESTAMP" property="updtdDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    ROLE_ID, ROLE_NAME, ROLE_DESC, ENABLE, CRTD_DATE, UPDTD_DATE
+  </sql>
+</mapper>

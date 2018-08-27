@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.login.mapper.MenuMapper">
+  <resultMap id="BaseResultMap" type="com.example.login.pojo.Menu">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="MENU_ID" jdbcType="VARCHAR" property="menuId" />
+    <result column="MENU_NAME" jdbcType="OTHER" property="menuName" />
+    <result column="MENU_TYPE" jdbcType="VARCHAR" property="menuType" />
+    <result column="MENU_URL" jdbcType="VARCHAR" property="menuUrl" />
+    <result column="MENU_CODE" jdbcType="VARCHAR" property="menuCode" />
+    <result column="PARENT_ID" jdbcType="VARCHAR" property="parentId" />
+    <result column="PARENT_IDS" jdbcType="VARCHAR" property="parentIds" />
+    <result column="CHILD_NUM" jdbcType="DECIMAL" property="childNum" />
+    <result column="LISTORDER" jdbcType="DECIMAL" property="listorder" />
+    <result column="CRTD_DATE" jdbcType="TIMESTAMP" property="crtdDate" />
+    <result column="UPDTD_DATE" jdbcType="TIMESTAMP" property="updtdDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    MENU_ID, MENU_NAME, MENU_TYPE, MENU_URL, MENU_CODE, PARENT_ID, PARENT_IDS, CHILD_NUM, 
+    LISTORDER, CRTD_DATE, UPDTD_DATE
+  </sql>
+</mapper>

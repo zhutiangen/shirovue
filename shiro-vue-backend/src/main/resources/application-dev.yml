@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+
+# Oracle
+    name: kobra
+    url: jdbc:oracle:thin:@127.0.0.1:1521:KOBRA
+    username: ztg
+    password: ztg
+mapper:
+  mappers: tk.mybatis.mapper.common.Mapper
+# MyBatis
+mybatis:
+  typeAliasesPackage: com.example.login.pojo
+  mapperLocations: classpath:/com/example/login/mapper/*.xml
